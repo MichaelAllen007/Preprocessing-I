@@ -5,7 +5,7 @@
   <meta charset="utf-8">
 
   <title>My Resume</title>
-
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/index.css">
 
   <!--[if lt IE 9]>
@@ -14,6 +14,83 @@
 </head>
 
 <body>
-  <h1>My Resume</h1>
+  <header id="header">
+    <div>
+      <nav class="navigation">
+        <a href="#">Home</a>
+        <a href="#">Qualifications</a>
+        <a href="#">Key Skills</a>
+        <a href="#">Work History</a>
+        <a href="https://michaelallen007.github.io/Portfolio/#work">Portfolio</a>
+        <a href="#">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="image">
+      <img src="images/LanceFeweck.jpg" alt="Fake picture of Fake Lance from Pexels.com">
+    </div>
+      <h1>Lance Feweck - Full Stack Web Developer</h1>
+        <p>I love building websites!</p>
+        <hr>
+        <p>Occasionally I have some free time to work on small projects, if you're interested, please let me know by signing up on this page.</p>
+        <button onclick="window.location.href = 'https://michaelallen007.github.io/Portfolio/#contact';">Click Here!</button>
+      </section>
+  <section class="skills">
+    <div id="sum">
+      <h2 class="h2-mixin">Summary of Qualifications:</h2>
+        <p>Dedicated and efficient full stack developer with 6+ years experience in application layers, presentation layers, and databases. Certified in both F/E and B/E technologies. Spearheaded successful transition from LAMP stack to MEAN which cut latency by 40% and increased effectiveness of database administrators by 20%. Seeking to further improve HTML5 and CSS3 skills as the future full stack developer at Atmospheric Solutions.</p>
+    </div>
+    <div id="key">
+      <h2>Key Skills:</h2>
+        <ul>
+          <li>Google Compute Engine</li>
+          <br>
+          <li>Android and iOS App Development</li>
+          <br>
+          <li>HTML, CSS, JavaScript, PHP</li>
+          <br>
+          <li>Bootstrap & Angular JS</li>
+          <br>
+          <li>jQuery</li>
+          <br>
+          <li>SQL Databases</li>
+        </ul>
+    </div>
+    <h2>Work History:</h2>
+    <div>
+      <h3>Full Stack Developer:</h3>
+       <ul>
+         <li>Developed full-stack web applications which processed, analyzed, and rendered data visually.</li>
+         <br>
+         <li>Liaised with back end developers, front end developers, quality assurance testers, and CTO as needed.</li>
+         <br>
+         <li>Managed time-sensitive updates, including content changes and database upgrades.</li>
+         <br>
+         <li>Planned, wrote, and debugged web applications and software with complete accuracy.</li>
+       </ul>
+       <br>
+      <h3>Junior Full Stack Developer:</h3>
+       <ul>
+         <li>Maximized applications’ efficiency, data quality, scope, operability, and flexibility.</li>
+         <br>
+         <li>Used various ideas from distributed computing, large-scale design, real-time data processing, data storage, ML, and AI to solve challenging dataset problems.</li>
+         <br>
+         <li>Managed, optimized, and updated PHP databases as necessary.</li>
+         <br>
+         <li>Developed app integration with REST / SOAP and other APIs for Google Maps, social media logins, payment processors, and other services.</li>
+       </ul>
+       </div>
+       <h2>Contact</h2>
+        <p>Lance.Feweck@gmail.com</p>
+        <br>
+        <p>(258)-354-2978</p>
+  </section>
+
+  <footer>
+      <p>Copyright My Resume 2020</p>
+  </footer>
+
 </body>
 </html>
