@@ -54,6 +54,121 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	font-family: 'Roboto', sans-serif;
+}
+@mobile: ~"only screen and (max-width: 500px)";
+@background-color: #E8E7E7;
+@width: 100%;
+@height: 50px;
+@button-radius: 8%;
+@text-size: 1.5em; 
+@flex: flex;
+
+.h2-mixin() {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	font-size: 2.5em;
+	font-family: cursive;
+
 }
 
+
+#header {
+	display: @flex;
+	width: @width;
+	height: @height;
+	justify-content: center;
+	flex-direction: row-reverse;
+	
+
+		
+	a {
+		text-decoration: none;
+		font-size: 1.5em;
+		padding: 80px;
+		color: black;
+
+		&:hover{
+				color: lightgray;
+		}
+
+	}
+}
+
+#about {
+	background-color: @background-color;
+	/*border: 2px solid red; */
+	display: @flex;
+	flex-direction: column;
+	padding-top: 50px;
+	padding-left: 40px;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+
+		.image {
+			@media @mobile {
+				visibility: hidden;
+			}
+		}
+
+		h1 {
+			padding-top: 20px;
+			padding-bottom: 20px;
+			font-size: 3.2em;
+			}
+
+		p {
+			padding-bottom: 20px;
+			font-size: @text-size;
+			}
+
+		button{
+			border: 2px solid black;
+			background: gray;
+			color: white;
+			width: 100px;
+			height: 35px;
+			border-radius: @button-radius;
+
+				&:hover{
+					color: black;
+					cursor: pointer;
+				}
+		}
+}
+
+.skills {
+	display: @flex;
+	flex-direction: column;
+	width: 60%;
+	margin-left: 10%;
+	margin-right: 14%;
+
+		h2 {
+			.h2-mixin()
+		}
+
+		p {
+			font-size: @text-size;
+		}
+
+		ul {
+			list-style-type: disc;
+			padding-left: 20px;
+			font-weight: bold;
+		}
+
+		h3 {
+			font-size: @text-size;
+			padding-bottom: 30px;
+		}
+}
+
+footer {
+	padding-top: 50px;
+	padding-bottom: 20px;
+	text-align: center;
+	font-weight: bold;
+}
